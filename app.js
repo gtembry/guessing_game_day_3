@@ -20,14 +20,14 @@ console.log('users answer:' + answer);
     alert('I LOVE traveling. That\'s kinda my jam. I lost count of the number of countries I\'ve been to.');
   }
   //here on up is good
-  var answer1 = prompt('Do you like basketball?')
+var answer1 = prompt('Do you like basketball?')
     answer1 = answer1.toLowerCase();
    console.log('answer1:', answer1);
 
    if (answer1 === 'N' || answer1 === 'no' || answer1 === 'N' || answer1 === 'NO') {
   alert('Oh that\'s lame. Basketball is my favorite sport.');
 }
-  var answer2 = prompt('Have you heard of Michael Jordan? He is kinda my hero..')
+var answer2 = prompt('Have you heard of Michael Jordan? He is kinda my hero..')
   answer2 = answer2.toLowerCase();
   console.log('answer2:', answer2)
 
@@ -38,21 +38,22 @@ alert('Have you been living under a rock?? He\'s a sports legend! How could you 
 var number;
 var counter = 1;
 
-while (number !== 23) {
+while (number !== 23 && counter < 5)  {
   number = parseInt(prompt('MJ wore this number on his jersey. It is also my favorite number, can you guess what it is?'));
 
   if (number < 23) {
-    alert('you guessed too low');
+    alert('too low, you have ' + counter + ' out of 4 tries.');
     counter++;
   } else if (number > 23) {
-    alert('you guessed too high');
+    alert('too high, you have ' + counter + ' out of 4 tries.');
     counter++;
   } else if (number === NaN || number === null) {
     alert('enter a number please');
     counter++;
+    console.log('counter:', counter);
   }
 }
-console.log('counter:', counter);
+
 
 var country = ['Colombia', 'Ireland', 'Spain', 'Austria', 'Netherlands'];
 country = country.toLowerCase();
