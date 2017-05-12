@@ -5,36 +5,32 @@ console.log('user:' + user)
 
 alert('Well, ' + user + '. Please answer my questions accordingly');
 
-var answer0 = prompt(user + ', Do you know what a C-17 is? Y/N');
-answer0 = answer0.toLowerCase();
+var answer0 = prompt(user + ', Do you know what a C-17 is? Y/N').toLowerCase();
 console.log('users answer:' + answer0);
 
   if (answer0 === 'N' || answer0 === 'no' || answer0 === 'n' || answer0 === 'NO')
     alert('Well, it\'s a plane, a REALLY big one. I logged about 2000 flight hours flying on C-17s.')
 
-var answer = prompt(user + ', do you like to travel? Y/N' );
-answer = answer.toLowerCase();
+var answer = prompt(user + ', do you like to travel? Y/N' ).toLowerCase();
 console.log('users answer:' + answer);
 
   if (answer === 'Y' || answer === 'yes' || answer === 'y' || answer === 'YES') {
     alert('I LOVE traveling. That\'s kinda my jam. I lost count of the number of countries I\'ve been to.');
   }
-  //here on up is good
-var answer1 = prompt('Do you like basketball?')
-    answer1 = answer1.toLowerCase();
-   console.log('answer1:', answer1);
 
-   if (answer1 === 'N' || answer1 === 'no' || answer1 === 'N' || answer1 === 'NO') {
-  alert('Oh that\'s lame. Basketball is my favorite sport.');
+var answer1 = prompt('Do you like basketball?').toLowerCase();
+console.log('answer1:', answer1);
+
+  if (answer1 === 'N' || answer1 === 'no' || answer1 === 'N' || answer1 === 'NO') {
+    alert('Oh that\'s lame. Basketball is my favorite sport.');
 }
-var answer2 = prompt('Have you heard of Michael Jordan? He is kinda my hero..')
-  answer2 = answer2.toLowerCase();
-  console.log('answer2:', answer2)
+var answer2 = prompt('Have you heard of Michael Jordan? He is kinda my hero..').toLowerCase();
+console.log('answer2:', answer2)
 
   if (answer2 === 'N' || answer2 === 'no' || answer2 === 'N' || answer2 === 'NO'){
-alert('Have you been living under a rock?? He\'s a sports legend! How could you not know that name? You\'re probably gonna have a hard time with my next now.')
+    alert('Have you been living under a rock?? He\'s a sports legend! How could you not know that name? You\'re probably gonna have a hard time with my next now.')
 }
-// good here
+
 var number;
 var counter = 1;
 
@@ -55,8 +51,7 @@ while (number !== 23 && counter < 5)  {
 }
 
 
-var country = ['Colombia', 'Ireland', 'Spain', 'Austria', 'Netherlands'];
-country = country.toLowerCase();
+var country = ['colombia', 'ireland', 'spain', 'austria', 'netherlands'];
 var answer1 = prompt('Can you guess one of my favorite countries I\'ve visited?');
 var flag = true;
 
